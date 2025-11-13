@@ -161,11 +161,6 @@ def struct():
     """
 
 
-# ============================================================================
-# CLEAN GROUP COMMANDS
-# ============================================================================
-
-
 @clean.command(name="remove-missing")
 @click.argument("values", callback=parse_list)
 @click.option("--quality-check", is_flag=True, help="Perform data quality validation")
@@ -222,11 +217,6 @@ def fill_missing_cmd(values, fill_value, quality_check):
 
     except Exception as exc:
         handle_processing_error("fill_missing", exc)
-
-
-# ============================================================================
-# NUMERIC GROUP COMMANDS
-# ============================================================================
 
 
 @numeric.command(name="normalize")
@@ -371,11 +361,6 @@ def log_transform_cmd(values, report):
         handle_processing_error("log_transform", exc)
 
 
-# ============================================================================
-# TEXT GROUP COMMANDS
-# ============================================================================
-
-
 @text.command(name="tokenize")
 @click.argument("text")
 @click.option("--report", is_flag=True, help="Show tokenization statistics")
@@ -454,11 +439,6 @@ def remove_stopwords_cmd(text, stopwords, report):
 
     except Exception as exc:
         handle_processing_error("remove_stopwords", exc)
-
-
-# ============================================================================
-# STRUCT GROUP COMMANDS
-# ============================================================================
 
 
 @struct.command(name="shuffle")

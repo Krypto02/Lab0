@@ -348,7 +348,7 @@ preprocessing.normalize_minmax([1, 2, 3, 4, 5])
 
 ##  License
 
-This project is created for educational purposes as part of an MLOps course.
+This project is created for educational purposes as part of the MLOps course.
 
 ##  Authors
 
@@ -366,4 +366,3 @@ For issues, questions, or contributions, please open an issue in the repository.
 
 ---
 
-**Happy Preprocessing! **
